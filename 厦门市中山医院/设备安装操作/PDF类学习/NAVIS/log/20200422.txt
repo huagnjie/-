@@ -1,0 +1,36 @@
+-----------------------------------------------------------------------------
+
+11:10:25 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“E:\csPDF”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+11:10:36 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“E:\csPDF”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+11:10:46 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“E:\csPDF”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+

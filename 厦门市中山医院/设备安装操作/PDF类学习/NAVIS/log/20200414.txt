@@ -1,0 +1,192 @@
+-----------------------------------------------------------------------------
+
+16:14:33 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:14:43 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:14:53 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:15:03 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:15:13 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:15:23 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:15:33 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:15:43 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:15:53 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:16:03 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:16:13 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:16:23 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:16:33 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:16:43 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:16:53 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+16:17:03 获取文件数据失败：System.IO.DirectoryNotFoundException: 未能找到路径“D:\asc1”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 LimsDev.Base.Sever.FilesHelper.KHxNRWrfm()
+   在 LimsDev.Base.Sever.FilesHelper.getstrArry()
+   在 LimsDev.Base.Sever.SeverFiles.GetData()
+
+-----------------------------------------------------------------------------
+

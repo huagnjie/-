@@ -1,0 +1,992 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LimsDev.Base</name>
+    </assembly>
+    <members>
+        <member name="T:LimsDev.Base.Resource1">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.Resource1.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.Resource1.Culture">
+            <summary>
+              为使用此强类型资源类的所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.INIReadWriter.#ctor(System.String)">
+            <summary>
+            INIFile Constructor.
+            </summary>
+            <PARAM name="INIPath"></PARAM>
+        </member>
+        <!-- 对于成员“M:LimsDev.Base.INIReadWriter.IniWriteValue(System.String,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:LimsDev.Base.INIReadWriter.IniReadValue(System.String,System.String)">
+            <summary>
+            Read Data Value From the Ini File
+            </summary>
+            <PARAM name="Section"></PARAM>
+            <PARAM name="Key"></PARAM>
+            <PARAM name="Path"></PARAM>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.WriteINI(LimsDev.Base.DBEntity,System.String)">
+            <summary>
+            写INI文件
+            </summary>
+            <param name="IP">IP</param>
+            <param name="Port">端口</param>
+            <param name="DBName">数据库名</param>
+            <param name="Code">数据库用户名</param>
+            <param name="Pswd">数据库密码</param>
+            <param name="DBType">数据库类型</param>
+            <param name="DBSou">数据库（源或目标数据库）1=源,2=目标</param>
+            <returns>errmsg</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.WriteINIHelper(System.String,System.String,System.String)">
+            <summary>
+            写ini文件（有密文）
+            </summary>
+            <param name="DBType"></param>
+            <param name="connstr"></param>
+            <param name="strSection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.ReadINI">
+            <summary>
+            读取ini文件（有密文）
+            </summary>
+            <param name="DBSou"></param>
+            <returns>数据库连接字符串，数据库类型</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.GetDataTable(System.String)">
+            <summary>
+            取源数据库数据或者目标数据库数据
+            </summary>
+            <param name="DBSouOrTag">1=源数据库 2=目标数据库</param>
+            <param name="sql">sql</param>
+            <returns>datatable</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.ExecuteNonQuery(System.String,System.String)">
+            <summary>
+            执行非查询语句
+            </summary>
+            <param name="sql">sql</param>
+            <returns>refmsg</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.BuildQueryCommand(System.Data.SqlClient.SqlConnection,System.String,System.Data.IDataParameter[])">
+            <summary>
+            构建 SqlCommand 对象(用来返回一个结果集，而不是一个整数值)
+            </summary>
+            <param name="connection">数据库连接</param>
+            <param name="storedProcName">存储过程名</param>
+            <param name="parameters">存储过程参数</param>
+            <returns>SqlCommand</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.ExecuteNonQuerySqlSp(LimsDev.Base.EntityResult)">
+            <summary>
+            执行SQLSever存储过程
+            </summary>
+            <param name="sql">sql</param>
+            <returns>refmsg</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.ExecuteNonQuerySqlSpISTAT(LimsDev.Base.EntityResult)">
+            <summary>
+            执行SQLSever存储过程
+            </summary>
+            <param name="sql">sql</param>
+            <returns>refmsg</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.ExecuteNonQueryOracleSp(System.String,System.Data.CommandType,System.Data.OracleClient.OracleParameter)">
+            <summary>
+            执行Oracle存储过程
+            </summary>
+            <param name="sql">sql</param>
+            <returns>refmsg</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.GetDataTable(System.String,System.String,System.String)">
+            <summary>
+            按连接方式直接去datatable
+            </summary>
+            <param name="sql">连接语句</param>
+            <param name="connstr">数据库连接字符串</param>
+            <param name="dbtype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.WriteINISingle(System.String,System.String,System.String)">
+            <summary>
+            写INI文件（无密文）
+            </summary>
+            <param name="Section"></param>
+            <param name="Key"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:LimsDev.Base.DBReadWriter.ReadINISingle(System.String,System.String)">
+            <summary>
+            读INI文件（无密文）
+            </summary>
+            <param name="Section"></param>
+            <param name="Key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:LimsDev.Base.EntityCOM._comPort">
+            <summary>
+            COM名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityCOM._comBaudrate">
+            <summary>
+            波特率
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityCOM._comDatabits">
+            <summary>
+            
+            数据位
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityCOM._comStopbits">
+            <summary>
+            停止位
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityCOM._comCheckdigit">
+            <summary>
+            校验位
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityCOM._comDCI">
+            <summary>
+            数据采集间隔
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityCOM._chk16">
+            <summary>
+            是否16进制解码
+            </summary>
+        </member>
+        <member name="F:LimsDev.Base.Win.frmCheckPwd.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.Win.frmCheckPwd.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LimsDev.Base.Win.frmCheckPwd.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:LimsDev.Base.LimsDevLocalSettings">
+            <summary>
+            本地配置信息
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.LimsDevLocalSettings.Save">
+            <summary>
+            保存配置
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.LimsDevLocalSettings.SetValue(System.String,System.Object)">
+            <summary>
+            设置配置值
+            </summary>
+            <param name="key">键值（最好加上模块前缀）</param>
+            <param name="value"></param>
+        </member>
+        <member name="M:LimsDev.Base.LimsDevLocalSettings.GetValue``1(System.String)">
+            <summary>
+            获取配置值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.LimsDevLocalSettings.GetValue(System.String)">
+            <summary>
+            获取配置值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.BaseDevName">
+            <summary>
+            仪器类名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.BaseDEVCode">
+            <summary>
+            仪器编码
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.BaseProcName">
+            <summary>
+            存储过程名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.BaseDuiType">
+            <summary>
+            接口类型
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.BaseTimeSpan">
+            <summary>
+            插入LIS数据库调用间隔
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.BaseResType">
+            <summary>
+            结果类型
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.BaseIsHavePicture">
+            <summary>
+            是否有图片
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.BaseIsDebugMode">
+            <summary>
+            是否为调试模式
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.COMName">
+            <summary>
+            串口名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.COMBaudrate">
+            <summary>
+            波特率
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.COMCheckdigit">
+            <summary>
+            校验位
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.COMDatabits">
+            <summary>
+            数据位
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.COMStopbits">
+            <summary>
+            停止位
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.COMDCI">
+            <summary>
+            数据采集间隔
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.COMIs16">
+            <summary>
+            是否16进制接收
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.Filepath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.Filesuffix">
+            <summary>
+            文件后缀
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.FileCodeType">
+            <summary>
+            编码类型
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.FileIsReadByLine">
+            <summary>
+            是否按行读取
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.DbType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.DbConnectionStr">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.DbSQLStr">
+            <summary>
+            sql语句
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.SoctHostad">
+            <summary>
+            主机地址
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.LimsDevLocalSettings.SoctPort">
+            <summary>
+            主机端口号
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.Sever.IDataServer.SendData(System.Object)">
+            <summary>
+            发送数据
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:LimsDev.Base.Sever.IDataServer.StartConnecttion">
+            <summary>
+            连接
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.Sever.IDataServer.CloseConnecttion">
+            <summary>
+            关闭连接
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.Sever.IDataServer.InitServer">
+            <summary>
+            初始化设备
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.Sever.IDataServer.GetServerInfo">
+            <summary>
+            获取服务描述信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:LimsDev.Base.Sever.IDataServer.ReceiveDataEvent">
+            <summary>
+            仪器接收数据后
+            </summary>
+        </member>
+        <member name="E:LimsDev.Base.Sever.IDataServer.AfterSendDataEvent">
+            <summary>
+            发送数据给仪器后
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.XMLDataTable.WriteToXml(System.Data.DataTable,System.String)">
+            <summary> 
+            将DataTable的内容写入到XML文件中 
+            </summary> 
+            <param name="dt">数据源</param> 
+            <param name="address">XML文件地址</param>
+        </member>
+        <member name="M:LimsDev.Base.XMLDataTable.ReadFromXml(System.String)">
+            <summary> 
+            从XML文件中读取一个DataTable 
+            </summary> 
+            <param name="dt">数据源</param> 
+            <param name="address">XML文件地址</param> 
+            <returns></returns> 
+        </member>
+        <member name="P:LimsDev.Base.EntitySOCKET._txtSoctHostad">
+            <summary>
+            主机地址
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntitySOCKET._txtSoctPort">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityFiles._txtFilepath">
+            <summary>
+            文件路径，如果是固定路径，请直接给出路径；如果是按时间命名的路径请按以下格式：C:\YYYYMMDD\ 或 C:\YYYY\MM\DD\(年月日及位数请标清楚)
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityFiles._txtFilesuffix">
+            <summary>
+            文件后缀
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityFiles._txtCodeType">
+            <summary>
+            编码类型
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityFiles._txtReadByLine">
+            <summary>
+            是否按行读取数据
+            </summary>
+        </member>
+        <member name="F:LimsDev.Base.frmSettings.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.frmSettings.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LimsDev.Base.frmSettings.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.rsDate">
+            <summary>
+            结果日期 txt
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.rsSamid">
+            <summary>
+            结果样本号 txt
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.rsBarcode">
+            <summary>
+            结果条码号，如果没有条码号请填null  txt
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.rsGate">
+            <summary>
+            结果通道  txt
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.result">
+            <summary>
+            结果 txt
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.rsDevCode">
+            <summary>
+            仪器编码 txt
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.rsSpname">
+            <summary>
+            存储过程名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.rsOD">
+            <summary>
+            OD值
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.rsType">
+            <summary>
+            结果类型
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityResult.reTime">
+            <summary>
+            cno2
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.frmDuiClent.SetConfigValue(System.String,System.String)">
+            <summary>
+            修改AppSettings中配置
+            </summary>
+            <param name="key">key值</param>
+            <param name="value">相应值</param>
+        </member>
+        <member name="M:LimsDev.Base.frmDuiClent.ResultWriteIn(System.Collections.Generic.List{LimsDev.Base.EntityResult})">
+            <summary>
+            写入数据时
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="F:LimsDev.Base.frmDuiClent.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.frmDuiClent.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LimsDev.Base.frmDuiClent.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LimsDev.Base.frmDataBaseSetting.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.frmDataBaseSetting.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LimsDev.Base.frmDataBaseSetting.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.frmDataBaseSetting.GetDbSet(System.String,System.String)">
+            <summary>
+            解密得到字符串后进行处理放入界面
+            </summary>
+            <param name="type"></param>
+            <param name="connstr"></param>
+            <returns></returns>
+        </member>
+        <member name="P:LimsDev.Base.EntityDataBase._databsDbType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDataBase._databsDbConnectionStr">
+            <summary>
+            数据库连接语句
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDataBase._databsDbSQL">
+            <summary>
+            sql语句
+            </summary>
+        </member>
+        <member name="T:LimsDev.Base.DeviceTractBase">
+            <summary>
+            仪器数据处理基类
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.SetDataServer(LimsDev.Base.Sever.IDataServer,LimsDev.Base.BaseSettingInfo)">
+            <summary>
+            设置数据服务源
+            </summary>
+            <param name="dataServer"></param>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.DeCode(System.Object)">
+            <summary>
+            解码
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.Check(System.String,System.String@,System.String@)">
+            <summary>
+            检查数据的完整性
+            </summary>
+            <param name="source">所有数据</param>
+            <param name="result">单个结果完整数据</param>
+            <param name="remainderStr">剩余数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.OnStartConnected">
+            <summary>
+            仪器连接后
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.OnResultWriteIn(LimsDev.Base.Common.ResultWriteInArgs)">
+            <summary>
+            写入数据时
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.SendData(System.String)">
+            <summary>
+            发送十进制数据
+            </summary>
+            <param name="value">十进制数据</param>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.SendHexData(System.String)">
+            <summary>
+            发送十六进制数据(发送前会自动把16进行数据转换为10进制数据发送)
+            </summary>
+            <param name="value">16进制数据（比如发送 06,04,05等）</param>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.StrToHex(System.String)">
+            <summary>
+            返回处理后的十六进制字符串
+            </summary>
+            <param name="mStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.HexToStr(System.String)">
+            <summary>
+            返回十六进制代表的字符串
+            </summary>
+            <param name="mHex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.DeviceTractBase.Split(System.String,LimsDev.Base.EnumSplitMode)">
+            <summary>
+            字符串拆分
+            </summary>
+            <param name="source"></param>
+            <param name="mode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LimsDev.Base.BaseSettingInfo">
+            <summary>
+            基本配置信息
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.BaseSettingInfo.DevID">
+            <summary>
+            仪器id
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.BaseSettingInfo.ProcessNmae">
+            <summary>
+            存储过程名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.BaseSettingInfo.ResultType">
+            <summary>
+            结果类型(sGeneralRes,sGermRes)
+            </summary>
+        </member>
+        <member name="F:LimsDev.Base.EnumSplitMode.EnterMode">
+            <summary>
+            换行拆分
+            </summary>
+        </member>
+        <member name="F:LimsDev.Base.EnumSplitMode.SpaceMode">
+            <summary>
+            空格拆分
+            </summary>
+        </member>
+        <member name="F:LimsDev.Base.EnumSplitMode.TabMode">
+            <summary>
+            Tab拆分
+            </summary>
+        </member>
+        <member name="F:LimsDev.Base.EnumSplitMode.TabModeAndRemoveEmpty">
+            <summary>
+            Tab拆分并去掉只包含空格的数据
+            </summary>
+        </member>
+        <member name="T:LimsDev.Base.Common.ResultWriteInArgs">
+            <summary>
+            数据写入参数
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.Common.ResultWriteInArgs.Results">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.Common.ResultWriteInArgs.Handle">
+            <summary>
+            是否已写入结果数据(为true时，默认写入数据逻辑无效，需要自定义写入逻辑)
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBEntity.strIP">
+            <summary>
+            主机IP地址
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBEntity.strPort">
+            <summary>
+            端口号
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBEntity.strDbName">
+            <summary>
+            数据库名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBEntity.strDbCode">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBEntity.strDbPwd">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:LimsDev.Base.SqlSeverHelper">
+            <summary>
+            SQLServer数据库操作类
+            本类主要包括SQLServer数据库的基本操作
+            
+            修改纪录
+            
+                2010.10.22 版本：1.1 lusens 新增了用户传入sql语句列表的事务操作
+            	2010.09.05 版本：1.0 lusens 创建。
+            
+            版本：1.1
+            
+            <author>
+            	<name>lusens</name>
+            	<date>2010.09.05</date>
+            	<EMail>lusens@foxmail.com</EMail>
+            </author> 
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.GetConnectionStringByConfig">
+            <summary>
+            读取配置文件的ConnectionString字符串
+            </summary>
+            <returns>Connection连接字符串</returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL语句，返回被操作的行数
+            使用using语句进行conn对象的释放
+            </summary>
+            <param name="connectionString">连接字符</param>
+            <param name="cmdType">Command类型，SQL语句或存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns>返回被操作行数</returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteNonQueryRfMsg(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL语句，返回错误信息
+            使用using语句进行conn对象的释放
+            </summary>
+            <param name="connectionString">连接字符</param>
+            <param name="cmdType">Command类型，SQL语句或存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns>返回被操作行数</returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL语句，返回被操作的行数
+            这里默认使用外面传入的conn对象，使用完成后不会对conn对象进行释放，需要自己在外面进行数据库连接释放
+            </summary>
+            <param name="connection">数据库连接对象</param>
+            <param name="cmdType">command命令类型，SQL语句或存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL语句，返回被操作的行数
+            这里默认使用外面传入的conn对象，使用完成后不会对conn对象进行释放，需要自己在外面进行数据库连接释放
+            </summary>
+            <param name="trans">SQL事务</param>
+            <param name="cmdType">command类型，SQL语句或存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteReader(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL，返回SqlDataReader
+            返回一个连接，所以不能进行conn释放，在外界代码中使用完DataReader后，注意需要释放reader对象
+            当返回连接对象报错时，这里进行数据库连接的关闭，保证数据库连接使用完成后保持关闭
+            </summary>
+            <param name="connectionString">数据库连接字符串</param>
+            <param name="cmdType">command命令类型，SQL语句或存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL，返回SqlDataReader
+            返回一个连接，所以不能进行conn释放，在外界代码中使用完DataReader后，注意需要释放reader对象
+            当返回连接对象报错时，这里进行数据库连接的关闭，保证数据库连接使用完成后保持关闭
+            </summary>
+            <param name="connection">SqlConnection数据库连接对象</param>
+            <param name="cmdType">command命令类型，SQL语句或存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteDataTable(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL，返回DataTable
+            使用using语句进行conn对象的释放
+            </summary>
+            <param name="connectionString">数据库连接字符串</param>
+            <param name="cmdType">command命令类型，SQL语句或存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            执行SQL，返回DataTable
+            这里默认使用外面传入的conn对象，使用完成后不会对conn对象进行释放，需要自己在外面进行数据库连接释放
+            </summary>
+            <param name="connection">数据库连接对象</param>
+            <param name="cmdType">Command命令类型，SQL语句或存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteScalar(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回第一行第一列
+            使用using语句进行conn对象的释放
+            </summary>
+            <param name="connectionString">数据库连接字符串</param>
+            <param name="cmdType">Command命令类型，SQL语句还是存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回第一行第一列
+            使用外面传入的conn对象，使用完成后不会对conn对象进行释放，需要自己在外面进行数据库连接释放
+            </summary>
+            <param name="connection">SqlConnection数据库连接对象</param>
+            <param name="cmdType">Command命令类型，SQL语句还是存储过程</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="commandParameters">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteTransaction(System.Data.SqlClient.SqlConnection,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Data.SqlClient.SqlParameter[]})">
+            <summary>
+            以事务执行sql语句列表，返回事务执行是否成功
+            </summary>
+            <param name="conn">数据库连接对象</param>
+            <param name="cmdTextes">sql语句列表</param>
+            <param name="commandParameterses">sql语句列表对应的参数列表，参数列表必须与sql语句列表匹配</param>
+            <returns>事务执行是否成功</returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.ExecuteTransaction(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Data.SqlClient.SqlParameter[]})">
+            <summary>
+            以事务执行sql语句列表，返回事务执行是否成功
+            </summary>
+            <param name="connectionString">数据库连接字符串</param>
+            <param name="cmdTextes">sql语句列表</param>
+            <param name="commandParameterses">sql语句列表对应的参数列表，参数列表必须与sql语句列表匹配</param>
+            <returns></returns>
+        </member>
+        <member name="M:LimsDev.Base.SqlSeverHelper.PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            构造SQLCommand
+            </summary>
+            <param name="cmd">Command对象</param>
+            <param name="conn">SqlConnection数据库连接对象</param>
+            <param name="trans">SQL事务</param>
+            <param name="cmdType">Command命令类型</param>
+            <param name="cmdText">SQL语句或存储过程名称</param>
+            <param name="cmdParms">参数数组</param>
+        </member>
+        <member name="T:LimsDev.Base.DBReadDataHelper">
+            <summary>
+            数据库读取数据到table帮助类
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.DBReadDataHelper.TestConnecttion(System.String,LimsDev.Base.EnumDbType)">
+            <summary>
+            测试连接
+            </summary>
+            <param name="connStr"></param>
+            <param name="dbtype"></param>
+            <returns>错误信息</returns>
+        </member>
+        <member name="M:LimsDev.Base.DBReadDataHelper.ReadData(System.String,System.String,LimsDev.Base.EnumDbType,LimsDev.Base.DBReadDataArgs)">
+            <summary>
+            获取数据
+            </summary>
+            <param name="connStr"></param>
+            <param name="sql"></param>
+            <param name="dbtype"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LimsDev.Base.DBReadDataArgs">
+            <summary>
+            读取参数
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBReadDataArgs.BeginTime">
+            <summary>
+            开始时间（对应sql的参数:@BeginTime,格式yyyy-MM-dd HH:mm:ss）
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBReadDataArgs.EndTime">
+            <summary>
+            结束时间（对应sql的参数:@EndTime,格式yyyy-MM-dd HH:mm:ss）
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBReadDataArgs.BarCode">
+            <summary>
+            条码号（对应sql的参数:@BarCode）
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBReadDataArgs.BeginSampleNum">
+            <summary>
+            开始样本号（对应sql的参数:@BeginSampleNum）
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.DBReadDataArgs.EndSampleNum">
+            <summary>
+            结束样本号（对应sql的参数:@EndSampleNum）
+            </summary>
+        </member>
+        <member name="M:LimsDev.Base.WriteLog.log(System.String)">
+            <summary>
+            按日期创建文件夹存储日志文件
+            </summary>
+            <param name="logstr"></param>
+        </member>
+        <member name="M:LimsDev.Base.WriteLog.WriteLogFile(System.String)">
+            
+            <summary>
+            写入同一个日志文件LogFile
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:LimsDev.Base.Program.Main(System.String[])">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDuiBaseSettings.DevName">
+            <summary>
+            仪器型号
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDuiBaseSettings.DuiType">
+            <summary>
+            数据源类型
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDuiBaseSettings.IsHavePicture">
+            <summary>
+            是否有图片
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDuiBaseSettings.IschkQC">
+            <summary>
+            是否是质控
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDuiBaseSettings.ProcName">
+            <summary>
+            存储过程名
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDuiBaseSettings.TimeSpan">
+            <summary>
+            调用存储过程时间间隔
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDuiBaseSettings.DEVCode">
+            <summary>
+            仪器编号
+            </summary>
+        </member>
+        <member name="P:LimsDev.Base.EntityDuiBaseSettings.ResType">
+            <summary>
+            结果类型
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,67 @@
+2020-04-06 02:06:29  发送-->：{"key":"startLink","ip":"192.168.1.102","port":15333}
+
+2020-04-06 02:06:47  发送-->：{"key":"startLink","ip":"192.168.1.102","port":15333}
+
+2020-04-06 02:06:51  发送-->：{"key":"startLink","ip":"192.168.1.102","port":15333}
+
+2020-04-06 02:07:13  <--接收：System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()
+
+2020-04-06 02:07:34  发送-->：7B226B6579223A2273746172744C696E6B222C226970223A223139322E3136382E312E313032222C22706F7274223A31353333337D
+
+2020-04-06 02:07:36  发送-->：7B226B6579223A2273746172744C696E6B222C226970223A223139322E3136382E312E313032222C22706F7274223A31353333337D
+
+2020-04-06 02:07:37  发送-->：7B226B6579223A2273746172744C696E6B222C226970223A223139322E3136382E312E313032222C22706F7274223A31353333337D
+
+2020-04-06 02:07:38  发送-->：7B226B6579223A2273746172744C696E6B222C226970223A223139322E3136382E312E313032222C22706F7274223A31353333337D
+
+2020-04-06 02:07:39  发送-->：7B226B6579223A2273746172744C696E6B222C226970223A223139322E3136382E312E313032222C22706F7274223A31353333337D
+
+2020-04-06 02:07:40  发送-->：7B226B6579223A2273746172744C696E6B222C226970223A223139322E3136382E312E313032222C22706F7274223A31353333337D
+
+2020-04-06 02:07:41  发送-->：7B226B6579223A2273746172744C696E6B222C226970223A223139322E3136382E312E313032222C22706F7274223A31353333337D
+
+2020-04-06 02:07:44  发送-->：7B226B6579223A2273746172744C696E6B222C226970223A223139322E3136382E312E313032222C22706F7274223A31353333337D
+
+2020-04-06 02:07:57  发送-->：{"key":"startLink","ip":"192.168.1.102","port":15333}
+
+2020-04-06 02:08:13  <--接收：System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()
+
+2020-04-06 02:09:03  发送-->：{"key":"startLink","ip":"192.168.1.102","port":15333}
+
+2020-04-06 02:09:17  发送-->：{"key":"startLink","ip":"192.168.1.102","port":15333}
+
+2020-04-06 02:09:51  发送-->：{"key":"startLink","ip":"192.168.1.102","port":3574}
+
+2020-04-06 02:09:58  发送-->：{"key":"startLink","ip":"192.168.1.102","port":3574}
+
+2020-04-06 02:10:06  发送-->：{"key":"startLink","ip":"192.168.1.102","port":3574}
+
+2020-04-06 02:10:06  <--接收：System.Net.Sockets.SocketException: 您的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()
+
+2020-04-06 02:10:11  发送-->：{"key":"startLink","ip":"192.168.1.102","port":3574}
+
+2020-04-06 02:10:21  发送-->：{"key":"startLink","ip":"192.168.1.102","port":3574}
+
+2020-04-06 02:10:22  <--接收：System.Net.Sockets.SocketException: 您的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()
+
+2020-04-06 02:10:25  发送-->：{"key":"startLink","ip":"192.168.1.102","port":3574}
+
+2020-04-06 02:10:39  发送-->：{"key":"startLink","ip":"192.168.1.102","port":3574}
+
+2020-04-06 02:24:24  <--接收：System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()
+

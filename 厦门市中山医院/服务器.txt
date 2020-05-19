@@ -1,0 +1,52 @@
+192.0.33.102   POCT
+
+WIFI:XMZSH-IC-H3C 密码：xmzsh2292228
+
+接上内网网线后配置：
+192.1.40.40
+255.255.255
+192.1.40.254
+
+首选DNS:192.1.33.200
+备用DNS:192.1.33.250
+
+VPN(有手册)
+huiqiao
+huiqiao@2725
+
+堡垒机（有手册）
+https://192.10.33.228
+用户：huiqiao
+密码：huiqiao@poct
+
+sqlserver  User
+
+poct
+hqpoct123123
+
+
+内网共享盘：191.1.33.69\d\lxg   
+账号：
+zsyy\administrator  密码：
+
+
+sanadmin 
+
+    
+科室的电脑要切换到管理员才能访问
+
+如果电脑打不开共享盘，在IE输入http://192.1.33.110/   账号密码如上
+在对话框中输入：！@#￥！@#￥      选择打开69共享，打开释放运行\\进入共享盘权限
+
+POCT安装网址：http://192.0.33.102:9527
+
+
+1、门诊电子病历--海泰
+2、住院电子病历--嘉和     以WEB方式提供嵌入到电子病历中
+
+IIS
+PdfTransform PDF转文字
+Poct.Web 提供网页查询报告
+VersionManager 版本管理
+
+

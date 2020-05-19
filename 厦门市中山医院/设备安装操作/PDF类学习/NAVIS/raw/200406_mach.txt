@@ -1,0 +1,16 @@
+System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()System.Net.Sockets.SocketException: 您的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()System.Net.Sockets.SocketException: 您的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 LimsDev.Base.Sever.SeverSocketClient.voFyecvXx()

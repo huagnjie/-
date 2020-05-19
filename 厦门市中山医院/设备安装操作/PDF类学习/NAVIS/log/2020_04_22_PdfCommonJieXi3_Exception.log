@@ -1,0 +1,42 @@
+
+时间：2020-04-22 11:13:51
+进程：C:\Users\Administrator\Desktop\厦门市中山医院\设备安装操作\PDF类学习\NAVIS\LimsDevInterface.exe
+模块：PdfCommonJieXi3   方法：DeCode   行数：0
+标题：解析pdf失败
+消息：
+System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:8089
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 LimsDev.DataFactory.Util.HttpHelper.SendRequest(String url, String json, String Method, String ContentType)
+   在 LimsDev.DataFactory.PdfCommonJieXi3.DeCode(Object str)
+来自异常(InnerException)：
+System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:8089
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+
+
+时间：2020-04-22 11:20:07
+进程：C:\Users\Administrator\Desktop\厦门市中山医院\设备安装操作\PDF类学习\NAVIS\LimsDevInterface.exe
+模块：PdfCommonJieXi3   方法：DeCode   行数：0
+标题：解析pdf失败
+消息：
+System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:8089
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 LimsDev.DataFactory.Util.HttpHelper.SendRequest(String url, String json, String Method, String ContentType)
+   在 LimsDev.DataFactory.PdfCommonJieXi3.DeCode(Object str)
+来自异常(InnerException)：
+System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:8089
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+
